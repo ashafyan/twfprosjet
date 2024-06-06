@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+nav{
+    position: relative;
+    width: 824px;
+    height: 100px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #0010f2);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav a:nth-child(1):hover~span{
+    left: 0;
+    width: 170px;
+}
+
+nav a:nth-child(2):hover~span{
+    left: 170px;
+    width: 170px;
+}
+
+nav a:nth-child(3):hover~span{
+    left: 360px;
+    width: 140px;
+}
+
+nav a:nth-child(4):hover~span{
+    left: 510px;
+    width: 175px;
+}
+
+nav a:nth-child(5):hover~span{
+    left: 690px;
+    width: 138px;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+

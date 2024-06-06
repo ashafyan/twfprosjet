@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmering</title>
+    <link rel="stylesheet" href="program.css">
+    <script src="https://kit.fontawesome.com/8058f1d367.js" crossorigin="anonymous"></script>
+    <script src="program.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Velkommen til Programmering</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="fager.html">Fager</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#contact">Lærer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Om denne nettsiden</h2>
+            <p>På denne nettsiden kan du lære om HTML, CSS og JavaScript. Disse teknologiene brukes til å lage og designe nettsider.</p>
+        </section>
+        
+        <section id="html">
+            <h2>Hva er HTML?</h2>
+            <p>HTML står for HyperText Markup Language og brukes til å strukturere innholdet på en nettside.</p>
+            <h3>Eksempel:</h3>
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Eksempel side&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Dette er en overskrift&lt;/h1&gt;
+    &lt;p&gt;Dette er et avsnitt.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+        
+        <!-- CSS Section -->
+        <section id="css">
+            <h2>Hva er CSS?</h2>
+            <p>CSS står for Cascading Style Sheets og brukes til å beskrive utseendet og formateringen av et dokument skrevet i HTML.</p>
+            <h3>Eksempel:</h3>
+            <pre>
+                <code>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+h1 {
+    color: #0056b3;
+}
+p {
+    font-size: 16px;
+}
+                </code>
+            </pre>
+        </section>
+        
+        <!-- JavaScript Section -->
+        <section id="javascript">
+            <h2>Hva er JavaScript?</h2>
+            <p>JavaScript er et programmeringsspråk som brukes til å lage dynamisk og interaktivt innhold på nettsider.</p>
+            <h3>Eksempel:</h3>
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;JavaScript Eksempel&lt;/title&gt;
+    &lt;script&gt;
+        function visMelding() {
+            alert('Hei, verden!');
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button onclick="visMelding()"&gt;Klikk meg&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+            <button onclick="visMelding()">Klikk meg</button>
+        </section>
+        
+        <section id="contact">
+            <h2>Programering IT </h2>
+            <img src="img/serdar.jpg" alt="">
+            <p>Lærer - Serdar Durmus</p>
+            <ul>
+                <li>Email:  serdard@afk.no</li>
+                <li>Arbeidstid: 08:10 - 15:30 </li>
+                <li>Telefon: +47 474 60 787</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img/logo.jpg" class="logo">
+                <p>Elev navn: Ashot Apyan</p>
+                <p>Klasse: 1IMA</p>
+                <P>Skoleår: 2023-2024</P>
+            </div>
+            <div class="col">
+                <h3>Skole: VGRØYKEN <div class="underline"><span></span></div> </h3>
+                <p>Address: Jon Leiras vei 30</p>
+                <p>Lærer:</p>
+                <p>Roy Heien, Serdar Durmus,</p>
+                <p>Henrik Gustavsen, Carlos Marti.</p>
+                <p class="email-id">ashotafyan@icloud.com</p>
+                <h4>+4793049837</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div></a></h3>
+                <ul>
+                    <li><a href="klasse.html">KLASSE</li>
+                    <li><a href="https://afk.no/royken-vgs/">RØYKEN VGS</a></li>
+                    <li><a href="fager.html">ALLE FAGER</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Ambefalinger <div class="underline"><span></span></div></a></h3>
+                <form>
+                    <i class="fa-regular fa-envelope" id="far"></i>
+                    <input type="email" placeholder="Skriv Emailen din" required>
+                    <button type="submit"><i class="fa-solid fa-circle-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook" id="fab"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Ashot Apyan 1IMA Røyken VGS © 2024 - Alle Rights Reserved </p>
+    </footer>
+</body>
+</html>
